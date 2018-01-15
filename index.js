@@ -14,6 +14,7 @@ function destructivelyUpdateObjectWithKeyAndValue(object,key,value) {
 function deleteFromObjectByKey(object,key){
   var newObject = object.assign({}, object)
   delete newObject[key]
+  return 
 }
   describe('deleteFromObjectByKey(object, key)', function() {
     it('deletes `key` from a clone of object and returns the new object (it is non-destructive)', function() {
